@@ -1,6 +1,24 @@
 h1 {
     color: black;
-    font-size:medium;
+    font-size: medium;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url("/Fonts/Raleway-Regular.ttf")
+}  
+.menu{height: 42px;
+    line-height: 40px;
+    background: fixed;
+}   
+body{ font-family: 'Raleway';
+}   
+label {
+    display: block
+    font :railway
+}
+button{
+    background-color: blue;
+    color: white;
 }
 .p{
     color: black;
@@ -9,12 +27,8 @@ h1 {
 }
 h2{
     font-size: medium;
-    font-family: 'Raleway' ;
-
-}
-@font-face {
     font-family: 'Raleway';
-    src: url('Raleway-VariableFont_wght.ttf')
 }
+
 
 

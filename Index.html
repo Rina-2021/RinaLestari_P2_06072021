@@ -9,27 +9,28 @@
     <!--metatags,links to Boostrap and stylesheets-->
 </head>
     <header>
-        <img src="logo.png" height="85px"/>
+        <img src="logo.png" height="48px"/>
     <!--Header-->
     <!--Section 1 Toolbars on the right top next to logo-->
  <section id="section_one"></section>
  <nav>
-     <a href ="#">Hébergements</a></li>
-     <a href ="#">Activités</a></li>
-     <a href ="#">S'inscrire</a></li>
+     <div class="menu">
+     <a href ="#">Hébergements</a>
+     <a href ="#">Activités</a>
+     <a href ="#">S'inscrire</a>   
  </nav>
     <div class="container">
         <div>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>Plein centre fille ou plein nature</p> 
+            <p>En plein centre ville ou en plein nature</p>
+                 <!--put this part in one frame--> 
             <form action="#">
-                <div class="form-grid">
-                <div>
-                    <label for="search">Marseille,France</label>
-                    <input type="search" id="Rechercher">
+                <div class="container">
+                    <div class="form-grid">
+                        <img src="map-marker-alt-solid.svg"alt="image" height="13px" height="13px"/><label for="unname"><i class="fas fa-map-marker-alt"></i></label>
+                        <input type="search" id="Rechercher" name="location" placeholder="Marseille,France"><button>Rechercher</button>
+                    </div>  
                 </div>
-                <div><input type="search" class="button" value="Rechercher">
-            <!--search button geolocalisation-->
         </div>
     </div>
     <div class="Filter">
@@ -85,18 +86,28 @@
             <p>
                 <a href ="" class="button">Notre-Dame-de-la-Garde</a></p>
             <p>
-                <a href ="" class="button">Parc longchamp</a></p>
-            </p>
-            
+                <a href ="" class="button">Parc Longchamp</a></p>
+            </p>          
         </div>
-        
-    
-    
-    
-
-    
-    
-
 </body>
+<footer>
+    <div class="container">
+        <div>
+            <h2>A propos</h2>
+            <p>Fonctionnement du site</p>
+            <p>Conditions générales de vente</p>
+            <p>Données et confidentialité</p>
+        </div>
+        <div>
+            <h2>Nos hébergements</h2>
+            <p>Charte qualite</p>
+            <p>Soumettre votre hôtel</p>
+        </div>
+        <div>
+            <h2>Assistance</h2>
+            <p>Nous contacter</p>
+        </div>
+    </div>
+</footer>
 
 </html>
