@@ -1,34 +1,132 @@
+@media screen and(min-width: 780px){
+    full-width-img {
+        margin: auto;
+        width: 90%;
+    } 
+}
+@media (max-width:599px){
+    nav li {
+        display: inline;
+    }
+}
+
+/*............................................... */
+
 h1 {
     color: black;
-    font-size: medium;
+    font-size: large;
 }
+h2  {
+    font-size: medium;
+    font-family: 'Raleway';
+}
+h3 {
+    color: black;
+    font-size: smaller;
+}
+h1, h2, h3 { font-family: Raleway;
+}
+p { font-size: smaller;
+}
+
 @font-face {
     font-family: "Raleway";
-    src: url("/Fonts/Raleway-Regular.ttf")
+    src: url("A:\rina\Openclassroom\Projet 2\Reservia\HTML");
 }  
-.menu{height: 42px;
-    line-height: 40px;
-    background: fixed;
-}   
-body{ font-family: 'Raleway';
-}   
 label {
-    display: block
-    font :railway
+    display: block;
+    font : railway;
 }
-button{
-    background-color: blue;
+button {
+    border : 1 px solid #ccc;
+    background-color:#0065fc;
     color: white;
-}
+    border-radius: 50px;
+    padding: 5px 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    cursor: pointer;
+}  
 .p{
+    line-height: 36px;
     color: black;
     font-size: small;
     font-family: 'Raleway';
 }
-h2{
-    font-size: medium;
-    font-family: 'Raleway';
+a,
+a visited {
+    text-decoration: #0065fc;
+    color: black;
 }
+nav{
+    position: inherit;
+    float:right;
+    font-size: 1em;
+}
+nav{
+    text-decoration:none;
+    display: flex;
+    text-align: center;
+    padding-top: 0.09em;
+}
+.element{ background-color: #f2f2f2;
+        border-radius: 25px;
+        padding: 20px;
+        width: 200px;
+        height: 150px;   
+        box-sizing: content-box;    
+        display: block;   
+}
+ul {
+    list-style: none;
+}
+.menu{
+    margin: 10px;
+    width: 900px;
+    font-family: raleway;
+}
+.menu li{
+    display: block;
+    width: 120px;
+    float:right;
+    margin-left:2px;
+    border:1px solid #000;
+}
+.menu a {
+    display:block;
+    padding:3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #0065fc;;
+}
+.menu a:hover { 
+    background-color: #0065fc;
+    color:#fff;
+}
+.item1 {
+    margin: 10px;
+    width: 900px;
+    font-family: raleway;
+}
+.item1 li {
+    display: block;
+    width: 150px;
+    float: left;
+    margin-left: 2px;
+    border-radius: 1px solid #000;
+    border-style: double;
+}
+.item1 a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    background-color: #ccc; 
+    color: #0065FC;
+}
+.item1 a:hover {
+    background-color: #ccc;  
+    color: black;
+}    
 
 
 
