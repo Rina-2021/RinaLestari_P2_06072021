@@ -3,73 +3,111 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Herbergement">
+    <meta name="viewport" content="width=device-width, minimum-scale=1,initial-scale=1.0"/>
+    <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve"/>
+    <img srcset="large-img.jpg 1024w, middle-img.jpg 64w,small-img.jpg 320w"/>
     <title>Reservia</title>
-    <!--metatags,links to Boostrap and stylesheets-->
+
 </head>
-    <header>
-        <img src="logo.png" height="48px"/>
+    <header> 
+        <div id="header">
     <!--Header-->
     <!--Section 1 Toolbars on the right top next to logo-->
- <section id="section_one"></section>
- <nav>
+        <section id="section_one"></section>
+        <img src="logo.png" alt="text" height="48px"/>
+    <nav>
      <div class="menu">
-     <a href ="#">Hébergements</a>
-     <a href ="#">Activités</a>
-     <a href ="#">S'inscrire</a>   
- </nav>
-    <div class="container">
-        <div>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en plein nature</p>
+        <div class="container">
+        <a href ="#">Hébergements</a>
+        <a href ="#">Activités</a>
+        <a href ="#">S'inscrire</a> 
+        </div>
+    </div>  
+    </nav>
+        <div class="container">
+            <div>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en plein nature</p>
                  <!--put this part in one frame--> 
-            <form action="#">
-                <div class="container">
-                    <div class="form-grid">
-                        <img src="map-marker-alt-solid.svg"alt="image" height="13px" height="13px"/><label for="unname"><i class="fas fa-map-marker-alt"></i></label>
-                        <input type="search" id="Rechercher" name="location" placeholder="Marseille,France"><button>Rechercher</button>
-                    </div>  
-                </div>
+                    <form action="#">
+                        <div class="container">
+                            <div class="form-grid">
+                                <img src="map-marker-alt-solid.svg"alt="image" height="15px" height="15px"/><label for="unname"><i class="fas fa-map-marker-alt"></i></label>
+                            <label><input type="search" id="Rechercher" name="location" placeholder="Marseille,France"></label><button>Rechercher</button>
+                            </div>  
+                        </div>
+            </div>
+        </div>
+    <div class="Filter">
+        <div container>
+        <h2>Filter</h2>
+            <a href="" class="button">Economique</a>
+            <a href="" class="button">Familial</a>
+            <a href="" class="button">Romantique</a>
+            <a href="" class="button">Animaux Autorises</a>
+            <img src=""/><p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </div>
-    <div class="Filter">
-        <p>Filter</p>
-        <a href="" class="button">Economique</a>
-        <a href="" class="button">Familial</a>
-        <a href="" class="button">Romantique</a>
-        <a href="" class="button">Animaux Autorises</a>
-        <img src=""/><p>Plus de 500 logements sont disponibles dans cette ville</p>
-     </div>
 </header>
 <body>
     <section class="section_two"></section>
     <div class="container">
         <div>
-            <h2>Hébergements à Marseille</h2>
-            <p>
-                <a href ="" class="button">Auberge La Cannebière</a></p>
-            <p>
-                <a href ="" class="button">Hôtel du port</a></p>
-            <p>
-                <a href ="" class="button">Hôtel les mouettes</a></p>
-            <p>
-                <a href ="" class="button">Hôtel de la mer</a></p>
-            <p>
-                <a href ="" class="button">Auberge le Panier</a></p>
-            <p>
-                <a href ="" class="button">Hôtel chez Amina</a></p>
-            </p>
+            <h1>Hébergements à Marseille</h1>
+            <div class="container"> <!--section_two left side top-->
+            <div>
+                <img src="img/img-Auberge.jpg" height="150px" alt="Auberge La Cannebière"></p>
+                <p><a href ="img-Auberge.jpg" class="button">Auberge La Cannebière</a></p>
+                <h6>Nuit à partir de 25€</h6>
+            </div>
+            <div>
+                <img src="img/img-Hotel du port.jpg" height="150px" alt="Hôtel du port">
+                <p><a href ="" class="button">Hôtel du port</a></p>
+                <p>Nuit à partir de 52€</p>
+            </div>
+            <div>
+                <img src="img/img-Hotel le mouttes.jpg" height="150px" alt="Hôtel le mouttes">
+                <p><a href ="" class="button">Hôtel les mouettes</a></p>
+                <p>Nuit à partir de 76€</p>
+            </div>
+            </div>
+            <div class="container"> <!--section_two left side under-->
+            <div>
+                <img src="img/img-Hotel de la mer.jpg" height="150px" alt="Hôtel de la mer">
+                <p><a href ="" class="button">Hôtel de la mer</a></p>
+                <p>Nuit à partir de 46€</p>
+            </div>  
+            <div>
+                <img src="img/img-Auberge le panier.jpg" height="150px" alt="Auberge le panier">
+                <p><a href ="" class="button">Auberge le panier</a></p>
+                <p>Nuit à partir de 23€</p>
+            </div>  
+            <div>
+                <img src="img/img-Hotel chez amina.jpg" height="150px" alt="Hôtel chez amina">
+                <p><a href ="" class="button">Hôtel chez amina</a></p>
+                <p>Nuit à partir de 96€</p>
+            </div>  
         </div>
-    <aside> <!--middle section the right side vertical line-->
-        <h2>Les plus populaires</h2>
-        <p>
-            <a href ="" class="button">Hôtel Le soleil du matin</a></p>
-        <p>
-            <a href ="" class="button">Au coeur de l'eau Chambres d'hôtes</a></p>
-        <p>
-            <a href ="" class="button">Hôtel tout Bleu et Blanc </a></p>
-        </p>
+    </div>
+    <aside> <!--the right side vertical line-->
+        <h1>Les plus populaires</h1>
+        <div class="container">
+            <div>
+                <img src="img/img-Hotel le soleil du matin.jpg" height="150px" alt="Hôtel le soleil du matin">
+                <p><a href ="" class="button">Hôtel le soleil du matin</a></p>
+                <p>Nuit à partir de 128€</p>
+            </div>
+            <div>
+                <img src="img/img-Au coeur de l'eau chambres d'hotes.jpg" height="150px" alt="Hôtel le soleil du matin">
+                <p><a href ="" class="button">Au coeur de l'eau Chambres d'hôtes</a></p>
+                <p>Nuit à partir de 71€</p>
+            </div>
+            <div>
+            <img src="img/img-Hotel Tout bleu et blanc.jpg" height="150px" alt="Hôtel le soleil du matin">
+            <p><a href ="" class="button">Hôtel Tout bleu et Blanc</a></p>
+            <p>Nuit à partir de 68€</p>
+            </div>
+        </div>
     </aside>
     <section class="section_three"></section> <!--section above the footer-->
     <div class="container">
@@ -87,7 +125,8 @@
                 <a href ="" class="button">Notre-Dame-de-la-Garde</a></p>
             <p>
                 <a href ="" class="button">Parc Longchamp</a></p>
-            </p>          
+            </p>
+        <h2>Afficher plus</h2>       
         </div>
 </body>
 <footer>
