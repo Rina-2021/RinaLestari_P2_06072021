@@ -1,33 +1,80 @@
+@media screen and(min-width: 780px){
+    full-width-img {
+        margin: auto;
+        width: 90%;
+    } 
+}
+@media (max-width:599px){
+    nav li {
+        display: inline;
+    }
+}
+
+/*............................................... */
+
+
 h1 {
     color: black;
     font-size: medium;
 }
+h2{
+    font-size: medium;
+    font-family: 'Raleway';
+}
+h6 {
+    font-family: "Raleway";
+    src: url("html/font");
+}
 @font-face {
     font-family: "Raleway";
-    src: url("/Fonts/Raleway-Regular.ttf")
+    src: url("A:\rina\Openclassroom\Projet 2\Reservia\HTML");
 }  
-.menu{height: 42px;
+#menu{
+    display: flex;
+    align-items: center;
+    height: 42px;
     line-height: 40px;
     background: fixed;
 }   
 body{ font-family: 'Raleway';
 }   
 label {
-    display: block
-    font :railway
+    display: block;
+    font : railway;
 }
-button{
+button {
+    border : 1 px solid #ccc;
     background-color: blue;
     color: white;
+    border-radius: 50px;
+    padding: 5px 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    cursor: pointer;
+
 }
+   
 .p{
+    line-height: 36px;
     color: black;
     font-size: small;
     font-family: 'Raleway';
 }
-h2{
-    font-size: medium;
-    font-family: 'Raleway';
+a,
+a visited {
+    text-decoration: none;
+    color: black;
+}
+nav{
+    position: inherit;
+    float:right;
+    font-size: 1em;
+}
+nav{
+    text-decoration:none;
+    display: flex;
+    text-align: center;
+    padding-top: 0.09em;
 }
 
 
