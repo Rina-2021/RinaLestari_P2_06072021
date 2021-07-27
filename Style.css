@@ -11,33 +11,38 @@
 }
 
 /*............................................... */
-
+@font-face {
+    font-family: 'Raleway';
+    src: url("Fonts/Raleway-VariableFont_wght.ttf");
+    src: url("Fonts/Raleway-Regular.ttf");
+    src: url("Fonts/Raleway-Light.ttf");  
+    font-style: normal;
+    font-weight: normal;
+}  
 h1 {
-    color: black;
-    font-size: large;
+    color: #000000;
+    font-size:small ;
+    font-family: 'Raleway';
 }
 h2  {
-    font-size: medium;
+    font-size: smaller;
     font-family: 'Raleway';
+    font-style: normal;
 }
 h3 {
     color: black;
-    font-size: smaller;
+    font-size:smaller;
 }
-h1, h2, h3 { font-family: Raleway;
+h1, h2, h3 { font-family: 'Raleway';
 }
 p { font-size: smaller;
+    font-family: 'raleway-regular.ttf';
 }
-
-@font-face {
-    font-family: "Raleway";
-    src: url("A:\rina\Openclassroom\Projet 2\Reservia\HTML");
-}  
 label {
     display: block;
     font : railway;
 }
-button {
+.button {
     border : 1 px solid #ccc;
     background-color:#0065fc;
     color: white;
@@ -46,6 +51,7 @@ button {
     display: inline-block;
     letter-spacing: 2px;
     cursor: pointer;
+    align-content: center;
 }  
 .p{
     line-height: 36px;
@@ -53,7 +59,6 @@ button {
     font-size: small;
     font-family: 'Raleway';
 }
-a,
 a visited {
     text-decoration: #0065fc;
     color: black;
@@ -70,12 +75,14 @@ nav{
     padding-top: 0.09em;
 }
 .element{ background-color: #f2f2f2;
-        border-radius: 25px;
-        padding: 20px;
-        width: 200px;
-        height: 150px;   
+    
+    border-radius: 25px;
+        margin: 20px;
+        padding: 10px 10px;
+        width: 100px;
+        height: 100px;   
         box-sizing: content-box;    
-        display: block;   
+        display: block;         
 }
 ul {
     list-style: none;
@@ -90,18 +97,18 @@ ul {
     width: 120px;
     float:right;
     margin-left:2px;
-    border:1px solid #000;
+    border:1px none #000;
 }
 .menu a {
     display:block;
     padding:3px;
     text-decoration: none;
     background-color: #fff;
-    color: #0065fc;;
+    color: #0065fc;
 }
 .menu a:hover { 
-    background-color: #0065fc;
-    color:#fff;
+    background-color: white;
+    color: black;
 }
 .item1 {
     margin: 10px;
@@ -113,20 +120,79 @@ ul {
     width: 150px;
     float: left;
     margin-left: 2px;
-    border-radius: 1px solid #000;
-    border-style: double;
+    border-radius: 1px solid #ccc;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #f2f2f2;
 }
 .item1 a {
     display: block;
     padding: 3px;
     text-decoration: none;
-    background-color: #ccc; 
-    color: #0065FC;
+    background-color: white; 
+    color: black;
 }
 .item1 a:hover {
-    background-color: #ccc;  
-    color: black;
-}    
+    background-color: white;  
+    color: #0065FC
+}   
+.box {
+    flex: 1.2;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+    float: right;
+    margin: 0px;
+    width: 416px;
+    top: 5px;
+    margin: 1em;
+    height: 629px;
+    display:list-item;
+ 
+}
+.after-box  {
+    clear: left;
+} 
+.container {
+    
+    display: -webkit-flex;
+    display: flex;
+     
+}
+.initial {
+    -webkit-flex: initial;
+    flex: initial;
+    width: 200px;
+    min-width: 100px;
+}   
+.section3 {
+    background-color: #f2f2f2;
+    margin: 0px;
+    padding: 10px;
+    height: 150px;
+    width: 200px;
+    margin-top: 20px;
+    
+} 
+aside img{
+    margin-right: 5px;
+}  
+footer {
+    display: flex;
+    background-color: #f2f2f2;
+    border: 5px solid #f2f2f2;
+    margin: 0px;
+    padding-top: 100px;
+    padding: 100px;
+    height: 50px;
+    width: 100%;
+    align-items: baseline;
+}
 
-
-
+.A propos{
+    column-count: 3;
+    column-width: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+}
