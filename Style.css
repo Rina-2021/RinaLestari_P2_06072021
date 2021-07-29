@@ -4,43 +4,52 @@
         width: 90%;
     } 
 }
-@media (max-width:599px){
-    nav li {
-        display: inline;
-    }
-}
+
 
 /*............................................... */
 @font-face {
     font-family: 'Raleway';
-    src: url("Fonts/Raleway-VariableFont_wght.ttf");
-    src: url("Fonts/Raleway-Regular.ttf");
-    src: url("Fonts/Raleway-Light.ttf");  
+    src:url("Fonts/Raleway-VariableFont_wght.ttf") format('truetype'),
+        url("Fonts/Raleway-Regular.ttf") format('truetype'),
+        url("Fonts/Raleway-Light.ttf") format('trutype');
     font-style: normal;
     font-weight: normal;
 }  
+body {
+    font-family: 'Raleway-Regular.ttf';
+    position: relative;
+    height: 1400px;
+    margin: 0 auto;   
+}
 h1 {
     color: #000000;
-    font-size:small ;
-    font-family: 'Raleway';
+    font-size: 1em;
+    font-weight: normal;
+    margin: 5 5 5 5px;
+    font-family:'Raleway-Regular.ttf';
 }
 h2  {
-    font-size: smaller;
-    font-family: 'Raleway';
-    font-style: normal;
+    font-size: 0.8em;
+    font-weight: normal;
+    margin: 5 5 5 5px;
+    font-family: 'Raleway-Regular.ttf';
 }
 h3 {
     color: black;
     font-size:smaller;
 }
-h1, h2, h3 { font-family: 'Raleway';
+h1, h2, h3 { font-family:'Raleway-Regular.ttf';
 }
 p { font-size: smaller;
-    font-family: 'raleway-regular.ttf';
+    font-family: 'Raleway-VariableFont_wght';
 }
 label {
     display: block;
-    font : railway;
+    font-family: 'Raleway';
+}
+#bloc_page {
+    width: 900px;
+    margin:auto;
 }
 .button {
     border : 1 px solid #ccc;
@@ -49,18 +58,30 @@ label {
     border-radius: 50px;
     padding: 5px 20px;
     display: inline-block;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     cursor: pointer;
     align-content: center;
+    font-size: 0.8em;    
 }  
+.button:hover{
+    border :0px solid black;
+    background: white;
+    color: white;
+}
+.button:active {
+    background: transparent;
+    color: white;
+}
+.link { cursor: pointer;
+    }
 .p{
-    line-height: 36px;
+    line-height: 20px;
     color: black;
-    font-size: small;
+    font-size: 1em;
     font-family: 'Raleway';
 }
 a visited {
-    text-decoration: #0065fc;
+    text-decoration: none;
     color: black;
 }
 nav{
@@ -74,6 +95,9 @@ nav{
     text-align: center;
     padding-top: 0.09em;
 }
+filter { margin: 5 5 5 5px;
+
+} 
 .element{ background-color: #f2f2f2;
     
     border-radius: 25px;
@@ -87,28 +111,49 @@ nav{
 ul {
     list-style: none;
 }
-.menu{
-    margin: 10px;
-    width: 900px;
-    font-family: raleway;
+#nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em; 
 }
-.menu li{
-    display: block;
-    width: 120px;
-    float:right;
-    margin-left:2px;
-    border:1px none #000;
+nav ul {
+    list-style-type: none;
+    display: flex; 
+    flex-direction: column;
+    justify-content: left;
 }
-.menu a {
-    display:block;
-    padding:3px;
+nav li{
+    margin-right: 15px;
+}
+nav a {
+    text-align: center;
+    font-size: 1em;
     text-decoration: none;
     background-color: #fff;
-    color: #0065fc;
+    color: #0065FC;
 }
-.menu a:hover { 
+nav a:hover,a:active { 
+    cursor: pointer;
     background-color: white;
     color: black;
+}
+.relative {
+    display: inline-block;
+    top: 23%;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    border-top: 100px;
+    border-bottom: 100px;
+    padding: 10px;
+    width: 60%;
+    position: relative;
+}
+
+.section{
+    float: left;
+    width: 50%;
 }
 .item1 {
     margin: 10px;
@@ -137,14 +182,17 @@ ul {
     color: #0065FC
 }   
 .box {
+    position: absolute;
+    left: 60%;
+    right:10%;
     flex: 1.2;
     background-color: #f2f2f2;
     border-radius: 5px;
     padding: 10px;
     float: right;
     margin: 0px;
-    width: 416px;
-    top: 5px;
+    width: 25%;
+    top: 22%;
     margin: 1em;
     height: 629px;
     display:list-item;
@@ -165,7 +213,7 @@ ul {
     width: 200px;
     min-width: 100px;
 }   
-.section3 {
+.section2 {
     background-color: #f2f2f2;
     margin: 0px;
     padding: 10px;
@@ -176,23 +224,31 @@ ul {
 } 
 aside img{
     margin-right: 5px;
-}  
+} 
+.aside {
+    float: right;
+    width: 25%;
+}
+.section3{
+    width: 80%;
+    margin: auto;
+}
 footer {
-    display: flex;
     background-color: #f2f2f2;
     border: 5px solid #f2f2f2;
-    margin: 0px;
-    padding-top: 100px;
-    padding: 100px;
-    height: 50px;
-    width: 100%;
-    align-items: baseline;
+    padding: 50px 0;
+    text-align: justify;
 }
 
-.A propos{
-    column-count: 3;
-    column-width: 200px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: flex-end;
+.column1of3, .column2of3, .column3of3 {
+    width: 300px;
+    float: center;
+    justify-content: space-around;
+   
+} 
+
+@media (max-width:600px){
+    nav li {
+        display: inline;
+    }
 }
