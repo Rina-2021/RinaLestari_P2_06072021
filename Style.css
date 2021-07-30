@@ -7,6 +7,9 @@
 
 
 /*............................................... */
+.container{
+    width: 1230px;
+} 
 @font-face {
     font-family: 'Raleway';
     src:url("Fonts/Raleway-VariableFont_wght.ttf") format('truetype'),
@@ -16,7 +19,7 @@
     font-weight: normal;
 }  
 body {
-    font-family: 'Raleway-Regular.ttf';
+    font-family: 'Raleway-VariableFont_wght';
     position: relative;
     height: 1400px;
     margin: 0 auto;   
@@ -26,20 +29,19 @@ h1 {
     font-size: 1em;
     font-weight: normal;
     margin: 5 5 5 5px;
-    font-family:'Raleway-Regular.ttf';
+    font-family:'Raleway-VariableFont_wght';
 }
 h2  {
     font-size: 0.8em;
     font-weight: normal;
     margin: 5 5 5 5px;
-    font-family: 'Raleway-Regular.ttf';
+    font-family: 'Raleway-VariableFont_wght';
 }
 h3 {
     color: black;
     font-size:smaller;
 }
-h1, h2, h3 { font-family:'Raleway-Regular.ttf';
-}
+
 p { font-size: smaller;
     font-family: 'Raleway-VariableFont_wght';
 }
@@ -61,7 +63,8 @@ label {
     letter-spacing: 1px;
     cursor: pointer;
     align-content: center;
-    font-size: 0.8em;    
+    font-size: 0.8em;  
+    text-decoration: none;  
 }  
 .button:hover{
     border :0px solid black;
@@ -77,7 +80,7 @@ label {
 .p{
     line-height: 20px;
     color: black;
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: 'Raleway';
 }
 a visited {
@@ -99,8 +102,7 @@ filter { margin: 5 5 5 5px;
 
 } 
 .element{ background-color: #f2f2f2;
-    
-    border-radius: 25px;
+        border-radius: 25px;
         margin: 20px;
         padding: 10px 10px;
         width: 100px;
@@ -121,8 +123,9 @@ ul {
 nav ul {
     list-style-type: none;
     display: flex; 
-    flex-direction: column;
-    justify-content: left;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: center;
 }
 nav li{
     margin-right: 15px;
@@ -139,18 +142,30 @@ nav a:hover,a:active {
     background-color: white;
     color: black;
 }
+.location{
+    display: flex;
+    justify-content: left;
+}
 .relative {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content:left;
+    align-content:center;
+    flex-wrap:wrap;
     top: 23%;
     background-color: #F2F2F2;
-    border-radius: 5px;
-    border-top: 100px;
-    border-bottom: 100px;
-    padding: 10px;
+    border-radius: 10px;
     width: 60%;
+    height: 60%;
+    padding: 10px;
     position: relative;
 }
-
+.hotel{
+    border: white solid 4px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0.5em;
+}
 .section{
     float: left;
     width: 50%;
@@ -171,6 +186,8 @@ nav a:hover,a:active {
     border-color: #f2f2f2;
 }
 .item1 a {
+    flex-wrap: wrap;
+    gap: 5px;
     display: block;
     padding: 3px;
     text-decoration: none;
@@ -188,24 +205,28 @@ nav a:hover,a:active {
     flex: 1.2;
     background-color: #f2f2f2;
     border-radius: 5px;
-    padding: 10px;
     float: right;
-    margin: 0px;
-    width: 25%;
-    top: 22%;
-    margin: 1em;
+    margin-right: 20px;
+    width: 20%;
+    top: 21.5%;
+    margin: 2em;
     height: 629px;
-    display:list-item;
- 
+    display:list-item; 
 }
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}      
 .after-box  {
     clear: left;
 } 
 .container {
-    
-    display: -webkit-flex;
-    display: flex;
-     
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;   
 }
 .initial {
     -webkit-flex: initial;
@@ -214,13 +235,15 @@ nav a:hover,a:active {
     min-width: 100px;
 }   
 .section2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     background-color: #f2f2f2;
-    margin: 0px;
+    margin: 10px;
     padding: 10px;
     height: 150px;
     width: 200px;
     margin-top: 20px;
-    
 } 
 aside img{
     margin-right: 5px;
@@ -234,6 +257,7 @@ aside img{
     margin: auto;
 }
 footer {
+    align-items: center;
     background-color: #f2f2f2;
     border: 5px solid #f2f2f2;
     padding: 50px 0;
@@ -241,9 +265,11 @@ footer {
 }
 
 .column1of3, .column2of3, .column3of3 {
+    justify-content:center;
     width: 300px;
     float: center;
     justify-content: space-around;
+    text-align: left;
    
 } 
 

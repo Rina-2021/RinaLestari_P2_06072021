@@ -10,7 +10,7 @@
         <script src="https://kit.fontawesome.com/0376f70c61.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+<body>
     <div id="bloc_page">
         <header> 
         <div id="header">
@@ -29,21 +29,21 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h2>En plein centre ville ou en plein nature</h2>
                  <!--put this part in one frame--> 
-                <div><form action="#"><div class="container"><i class="fas fa-map-marker-alt"></i></label><label><input type="search" id="Rechercher" name="location" placeholder="Marseille,France"></label><button>Rechercher</button>
+                <div><form action="#"><div class="location"><i class="fas fa-map-marker-alt"></i></label><label><input type="search" id="Rechercher" name="location" placeholder="Marseille,France"></label><button>Rechercher</button>
                 </div>  
             </div>
-            <h3>Filter</h3>
             <div class="item1">
-            <ul> <!--icon on thumbnails should be appears before buttons-->
+                <h3>Filter</h3>
+                <ul> <!--icon on thumbnails should be appears before buttons-->
                 <li><a href target="_blank" class="button">Economique</a></li>
                 <i class="fas fa-money-bill-wave"></i>
                 <li><a href="" class="button">Familial</a></li>
-                <i class="fas-fa-person"></i> <!-- still dont appears icon person-->
+                <i class="fas fa-person"></i> <!-- still dont appears the icon person-->
                 <li><a href="" class="button">Romantique</a></li>
                 <i class="fas fa-heart"></i>
                 <li><a href="" class="button">Animaux Autorises</a></li>
                 <i class="fas fa-dog"></i>
-            </ul><br>
+                </ul><br>
                 <p><i class="fas fa-info-circle"></i><p></p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </header>
@@ -53,37 +53,38 @@
             <div style="display:flex" letter-spacing: 1em></div>
             <div class="initial"></div> <!--section_two left side top-->
                 <div class="container" width="239px" height="195px"></div>
-                    <div class="row-1">
-                    <div style="flex-grow:1">
-                        <img src="img/img-Auberge.jpg"  width="236px" height="114px" alt="Auberge La Cannebière"></p>
-                        <h3><a href ="img-Auberge.jpg" class="link">Auberge La Cannebière</a></h3>
-                        <p>Nuit à partir de 25€</p></div>
-                        <img src="rating stars1.png">
-                    <div style="flex-grow:2"></div>
-                        <img src="img/img-Hotel du port.jpg" width="236px" height="114px" alt="Hôtel du port">
-                        <h3><a href ="" class="link">Hôtel du port</a></h3>
-                        <p>Nuit à partir de 52€</p></div>
-                        <img src="rating stars full.png">
-                    <div style="flex-grow:3">
-                        <img src="img/img-Hotel le mouttes.jpg" width="236px" height="114px" alt="Hôtel le mouttes">
-                        <h3><a href ="" class="link">Hôtel les mouettes</a></h3>
-                        <p>Nuit à partir de 76€</p></div>
-                        <img src="rating stars1.png">
-                    <div style="flex-grow:4"> <!--section_two left side under-->
-                        <img src="img/img-Hotel de la mer.jpg" width="236px" height="114px" alt="Hôtel de la mer">
-                        <h3><a href ="" class="link">Hôtel de la mer</a></h3>
-                        <p>Nuit à partir de 46€</p></div>
-                        <img src="rating stars2.png">
-                    <div style="flex-grow:5">
-                        <img src="img/img-Auberge le panier.jpg" width="236px" height="114px" alt="Auberge le panier">
-                        <h3><a href ="" class="link">Auberge le panier</a></h3>
-                        <p>Nuit à partir de 23€</p></div>
-                        <img src="rating stars1.png">
-                    <div style="flex-grow:5">
-                        <img src="img/img-Hotel chez amina.jpg" width="236px" height="114px" alt="Hôtel chez amina">
-                        <h3><a href ="" class="link">Hôtel chez Amina</a></h3>
-                        <p>Nuit à partir de 96€</p></div><br />
-                        <img src="rating stars full.png">
+                    <div class="hotels">
+                        <div class="hotel">
+                            <img src="img/img-Auberge.jpg" width="236px" height="114px" alt="Auberge La Cannebière"></p>
+                            <h3><a href ="img-Auberge.jpg" class="link">Auberge La Cannebière</a></h3>
+                            <p>Nuit à partir de 25€</p>
+                            <img src="rating stars1.png"></div><br />
+                        <div class="hotel">
+                            <img src="img/img-Hotel du port.jpg" width="236px" height="114px" alt="Hôtel du port">
+                            <h3><a href ="" class="link">Hôtel du port</a></h3>
+                            <p>Nuit à partir de 52€</p>
+                            <img src="rating stars full.png"></div><br />
+                        <div class="hotel">
+                            <img src="img/img-Hotel le mouttes.jpg" width="236px" height="114px" alt="Hôtel le mouttes">
+                            <h3><a href ="" class="link">Hôtel les mouettes</a></h3>
+                            <p>Nuit à partir de 76€</p>
+                            <img src="rating stars1.png"></div><br />
+                        <div class="hotel"> <!--section_two left side under-->
+                            <img src="img/img-Hotel de la mer.jpg" width="236px" height="114px" alt="Hôtel de la mer">
+                            <h3><a href ="" class="link">Hôtel de la mer</a></h3>
+                            <p>Nuit à partir de 46€</p>
+                            <img src="rating stars2.png"></div><br />
+                        <div class="hotel">
+                            <img src="img/img-Auberge le panier.jpg" width="236px" height="114px" alt="Auberge le panier">
+                            <h3><a href ="" class="link">Auberge le panier</a></h3>
+                            <p>Nuit à partir de 23€</p>
+                            <img src="rating stars1.png"></div><br />
+                        <div class="hotel">
+                            <img src="img/img-Hotel chez amina.jpg" width="236px" height="114px" alt="Hôtel chez amina">
+                            <h3><a href ="" class="link">Hôtel chez Amina</a></h3>
+                            <p>Nuit à partir de 96€</p>
+                            <img src="rating stars full.png"></div><br />
+                    </div>
                         
                 <h3><a href ="Afficher plus" class="link">Afficher plus</a></h3> <!--i need to put button click on this one-->              
             </div>
@@ -120,19 +121,19 @@
 
         <section id="section2" letter-spacing: 1em> <!--section above the footer-->
             <div class="container">
-                    <h1>Activités à Marseille</h1><br>
-                    <div><img src="img/img-Vieux port.jpg" width="305px" height="391px" alt="Vieux Port">
-                    <p><a href ="" class="link">Vieux port</a></p> 
-                    <div><img src="img/img-fort de Pomègues.jpg" width="301px" height="180px alt="Fort de Pomègues">
-                    <p><a href ="" class="link">Fort de Pomègues</a></p></div>
-                    <div><img src="img/img-Ile du Frioul.jpg" width="304px" height="112px alt="Île de Frioul">
-                    <p><a href ="" class="link">Île de Frioul</a></p></div>       
-                    <div><img src="img/img-Parc national des calanques.jpg" width="302px" height="389px alt="Parc National des Calanques">
-                    <p><a href ="" class="link">Parc National des Calanques</a></p></div>
-                    <div><img src="img/img-Notre dame de la garde.jpg" width="300px" height="140px alt="Notre-Dame-de-la-Garde">
-                    <p><a href ="" class="link">Notre-Dame-de-la-Garde</a></p></div>
-                    <div><img src="img/img-Parc Longchamp.jpg" width="302px" height="152px alt="Parc Longchamp">
-                    <p><a href ="" class="link">Parc Longchamp</a></p></div>     
+                <h1>Activités à Marseille</h1><br>                     
+                        <div><img src="img/img-Vieux port.jpg" width="305px" height="391px" alt="Vieux Port">
+                        <p><a href ="" class="link">Vieux port</a></p> </div>
+                        <div><img src="img/img-fort de Pomègues.jpg" width="301px" height="180px alt="Fort de Pomègues">
+                        <p><a href ="" class="link">Fort de Pomègues</a></p></div>
+                        <div><img src="img/img-Ile du Frioul.jpg" width="304px" height="112px alt="Île de Frioul">
+                        <p><a href ="" class="link">Île de Frioul</a></p></div>       
+                        <div><img src="img/img-Parc national des calanques.jpg" width="302px" height="389px alt="Parc National des Calanques">
+                        <p><a href ="" class="link">Parc National des Calanques</a></p></div>
+                        <div><img src="img/img-Notre dame de la garde.jpg" width="300px" height="140px alt="Notre-Dame-de-la-Garde">
+                        <p><a href ="" class="link">Notre-Dame-de-la-Garde</a></p></div>
+                        <div><img src="img/img-Parc Longchamp.jpg" width="302px" height="152px alt="Parc Longchamp">
+                        <p><a href ="" class="link">Parc Longchamp</a></p></div>   
             </div>
         </section>
    
@@ -155,6 +156,7 @@
                 <p>Centre d'aide</p><br>
             </div>
             </div>
-        </footer> 
-    </body>
+        </footer>   
+    </div> 
+</body>
 </html>
