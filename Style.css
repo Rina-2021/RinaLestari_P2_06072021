@@ -1,12 +1,9 @@
 @media screen and(min-width: 780px){
-    full-width-img {
+    full-width-img{
         margin: auto;
-        width: 90%;
-    } 
+        width: 98%;}
 }
 
-
-/*............................................... */
 .container{
     width: 1230px;
 } 
@@ -18,6 +15,10 @@
     font-style: normal;
     font-weight: normal;
 }  
+.logo{
+    width: 50px;
+    height: 46px;
+}    
 body {
     font-family: 'Raleway-VariableFont_wght';
     position: relative;
@@ -33,7 +34,7 @@ h1 {
 h2  {
     font-size: 0.8em;
     font-weight: normal;
-    margin: 5 5 5 5px;
+    margin: 5px;
     font-family: 'Raleway-VariableFont_wght';
 }
 h3 {
@@ -52,9 +53,8 @@ label {
     margin:auto;
 }
 .button {
-    border : 1 px solid #ccc;
-    background-color:#0065fc;
-    
+    border : 1px solid #f2f2f2;
+    background-color:#0065fc;  
     display: inline-block;
     letter-spacing: 1px;
     cursor: pointer;
@@ -99,7 +99,7 @@ a.link{ text-decoration: none;
     color: black;
 
 }
-.filter { margin: 5 5 5 5px;
+.filter { margin: 5px;
 
 } 
 .element{ background-color: #f2f2f2;
@@ -198,7 +198,7 @@ img.rounded-corners{
     width: 150px;
     float: left;
     margin-left: 2px;
-    border-radius: 1px solid #ccc;
+    border-radius: 1px;
     border-style: solid;
     border-radius: 50px;
     border-color: #f2f2f2;
@@ -227,13 +227,12 @@ img.rounded-corners{
     margin-right: 20px;
     width: 20%;
     top: 19.3%;
-    margin: em;
     height: 629px;
     display:list-item; 
     justify-content: left;
 }
-.one {border: #f2f2f2 solid 2px;
-    border-style: solid #F2F2F2 3px;
+.one {border: #f2f2f2 solid;
+    border-style: solid;
     background-color: white;
     border-radius: 20px;
     margin: 0.6em;
@@ -245,7 +244,7 @@ img.rounded-corners{
     box-shadow: 3px 3px 3px lightgray;
 }
 .two {border: #f2f2f2 solid 2px;
-    border-style: solid #F2F2F2 3px;
+    border-style: solid;
     background-color: white;
     border-radius: 15px;
     margin: 0.6em;
@@ -253,11 +252,11 @@ img.rounded-corners{
     flex-direction: row;
     justify-content: space-around;
     align-items:flex-start;
-    align-items: left;
+    text-align: left;
     box-shadow: 3px 3px 3px lightgray;
 }
 .three {border: #f2f2f2 solid 2px;
-    border-style: solid #F2F2F2 3px;
+    border-style: solid;
     background-color: white;
     border-radius: 15px;
     margin: 0.6em;
@@ -265,7 +264,7 @@ img.rounded-corners{
     flex-direction: row;
     justify-content: space-around;
     align-items:flex-start;
-    align-items: left;
+    text-align: left;
     box-shadow: 3px 3px 3px lightgray;
 }
 img.corner {border-radius: 15px 0px 0px 15px;
@@ -303,7 +302,7 @@ img.corner {border-radius: 15px 0px 0px 15px;
     margin-top: 20px;
 } 
 .verticalleft { border: #f2f2f2 solid 2px;
-    border-style: solid #F2F2F2 3px;
+    border-style: solid;
     background-color: white;
     border-radius: 15px;
     margin: 0.6em;
@@ -311,14 +310,14 @@ img.corner {border-radius: 15px 0px 0px 15px;
 }
 .fort {
     border: #f2f2f2 solid 2px;
-    border-style: solid #F2F2F2 3px;
+    border-style: solid;
     background-color: white;
     border-radius: 20px;
     margin: 0.6em;
     box-shadow: 3px 3px 3px lightgray;
 }
 .ile { border: #f2f2f2 solid 2px;
-    border-style: solid #F2F2F2 3px;
+    border-style: solid;
     background-color: white;
     border-radius: 20px;
     margin: 0.6em;
@@ -326,7 +325,7 @@ img.corner {border-radius: 15px 0px 0px 15px;
 }
 .verticalright {
     border: #f2f2f2 solid 2px;
-    border-style: solid #F2F2F2 3px;
+    border-style: solid;
     background-color: white;
     border-radius: 20px;
     margin: 0.6em;
@@ -334,7 +333,7 @@ img.corner {border-radius: 15px 0px 0px 15px;
 }
 .notre {
     border:#f2f2f2 solid 2px;
-    border-style: solid #F2F2F2 3 px;
+    border-style: solid;
     background-color: white;
     border-radius: 20px;
     margin: 00.6em;
@@ -342,7 +341,7 @@ img.corner {border-radius: 15px 0px 0px 15px;
 }
 .parc {
     border:#f2f2f2 solid 2px;
-    border-style: solid #F2F2F2 3 px;
+    border-style: solid;
     background-color: white;
     border-radius: 20px;
     margin: 00.6em;
@@ -371,7 +370,7 @@ footer {
 .column1of3, .column2of3, .column3of3 {
     justify-content:center;
     width: 300px;
-    float: center;
+    float: left;
     justify-content: space-around;
     text-align: left;
    
