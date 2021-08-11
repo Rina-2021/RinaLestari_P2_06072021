@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="Hébergements.css" />
+    <link rel="stylesheet" href="Populaires.css" />
+    <link rel="stylesheet" href="Activités.css" />
+
+    
     <meta
       name="viewport"
       content="width=device-width, minimum-scale=1,initial-scale=1.0"
@@ -37,8 +42,7 @@
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <h2>En plein centre ville ou en plein nature</h2>
       <div class="location">
-        <!--still need to make icon mapmarker smaller-->
-        <span class="mapmarker"><i class="fas fa-map-marker-alt"></i 
+        <span class="mapmarker"><i class="fas fa-map-marker-alt" style="font-size: 0.8em;"></i 
         ></span><label
           ><input
             type="search"
@@ -48,20 +52,29 @@
         ><div><input type="search" class="button1" value="Rechercher"></div>
       </div>
       <div class="item1">
-        <div class="filter">
-          <h2>Filtres</h2><ul>
-            <li><span class="moneybill"><i class="fas fa-money-bill-wave"></i
-            ></span><a href="" class="button"><h2>Economique</h2></a></li>
-            <li><span class="person"><i class="fa fa-child"></i
-            ></span><a href="" class="button"><h2>Familial</h2></a></li>
-            <li><span class="heart"><i class="fas fa-heart"></i
-            ></span><a href="" class="button"><h2>Romantique</h2></a></li>
-            <li><span class="dog"><i class="fas fa-dog"></i
-            ></span><a href="" class="button"><h2>Animaux Autorises</h2></a></li>
+        <div class="filter"> 
+          <h2>Filtres</h2>
+          <ul class="nopadding filters">
+            <li>
+              <span class="moneybill"><i class="fas fa-money-bill-wave" 
+                width="18" height="16" ></i></span>
+              <a href="" class="button"><h2>Economique</h2></a>
+            </li>
+            <li>
+              <span class="person"><i class="fa fa-child" 
+                width="18" height="16"></i></span><a href="" class="button">
+                <h2>Familial</h2></a></li>
+            <li>
+              <span class="heart"><i class="fas fa-heart" width="18" height="16"></i
+              ></span><a href="" class="button"><h2>Romantique</h2></a></li>
+            <li>
+              <span class="dog"><i class="fas fa-dog" width="18" height="16"></i
+              ></span><a href="" class="button"><h2>Animaux Autorises</h2></a></li>
           </ul>
         </div>
-        <h5><span class ="circle"><i class="fas fa-info"></i></span> <!--need to change the border radius circle-->
-            Plus de 500 logements sont disponibles dans cette ville</h5>
+        <h5><span class ="circle"><i class="fas fa-info" 
+          width="4" height="4"></i></span> <!--still need to make the circle round-->
+          Plus de 500 logements sont disponibles dans cette ville</h5>
       </div>
       <section>
         <div class="relative">
@@ -71,7 +84,7 @@
           <!--section_two left side top-->
           <div class="container">
             <div class="hotel">
-              <a href="" class="link"><img
+              <a href="" target="_self" class="link"><img
                 src="img/img-Auberge.jpg"
                 alt="hotelauberge"
                 class="rounded-corners"
@@ -88,7 +101,7 @@
             </div>
             <br />
             <div class="hotel">
-              <a href="" class="link"><img
+              <a href="" target="_self" class="link"><img
                 src="img/img-Hotelduport.jpg"
                 alt="Hôtelduport"
                 class="rounded-corners"
@@ -105,7 +118,7 @@
             </div>
             <br />
             <div class="hotel">
-              <a href="" class="link"><img
+              <a href="" target="_self" class="link"><img
                 src="img/img-Hotellemouttes.jpg"
                 alt="Hôtellemouttes"
                 class="rounded-corners"
@@ -123,7 +136,7 @@
             <br />
             <div class="hotel">
               <!--section_two left side under-->
-              <a href="" class="link"><img
+              <a href="" target="_self" class="link"><img
                 src="img/img-Hoteldelamer.jpg"
                 alt="Hôteldelamer"
                 class="rounded-corners"
@@ -140,7 +153,7 @@
             </div>
             <br />
             <div class="hotel">
-              <a href="" class="link"><img
+              <a href="" target="_self" class="link"><img
                 src="img/img-Aubergelepanier.jpg"
                 alt="Aubergelepanier"
                 class="rounded-corners"
@@ -157,7 +170,7 @@
             </div>
             <br />
             <div class="hotel">
-              <a href="" class="link"><img
+              <a href="" target="_self" class="link"><img
                 src="img/img-Hotelchezamina.jpg"
                 alt="Hôtelchezamina"
                 class="rounded-corners"
@@ -174,14 +187,15 @@
             </div>
             <br />
           </div>
-        <h3><a href="AfficherPlus.html"><span class="Afficher">Afficher plus</span></a></h3>
+        <h3><a href="AfficherPlus.html"><span class="Afficher">
+          Afficher plus</span></a></h3>
         </div>          
       </section>
         <aside>
           <!--the right side vertical line-->
-          <div class="box">
-              <h2>Les plus populaires <span class="line"><i class="fas fa-chart-line"></span></i></h2>
-            <div class="frameaside"><!--need to make the text in row-->
+          <div class="box"><!--still need to make it stay still dont move up down-->
+              <h2>Les plus populaires 
+              <span class="line"><i class="fas fa-chart-line"></span></i></h2>       
               <div class="one">
                 <a href="" class="newpage">
                 <img
@@ -243,8 +257,7 @@
                     </div>
                   </p>
                 </div>
-              </div>
-            </div>
+              </div>           
           </div>    
         </aside>
       </section>
@@ -254,7 +267,7 @@
           <div class="Activités">
                 <div class="vieux">
                 <div class="imagebox">
-                <a href="" class="target"><img
+                <a href="" target="_self" class="target"><img
                   src="img/img-Vieuxport.jpg"
                   width="305"
                   height="391"
@@ -267,7 +280,7 @@
                 <div class="oneline">           
                 <div class="fort">
                 <div class="imagebox">
-                <a href="" class="target"><img
+                <a href="" target="_self" class="target"><img
                   src="img/img-fortdePomègues.jpg"
                   width="307"
                   height="180"
@@ -280,7 +293,7 @@
                 <br />
                 <div class="ile">
                 <div class="imagebox">
-                <a href="" class="target"><img
+                <a href="" target="_self" class="target"><img
                   src="img/img-IleduFrioul.jpg"
                   width="304"
                   height="112"
@@ -293,7 +306,7 @@
                 </div>
                 <div class="parc">
                 <div class="imagebox">
-                <a href="" class="target"><img
+                <a href="" target="_self" class="target"><img
                   src="img/img-Parcnationaldescalanques.jpg"
                   width="302"
                   height="389"
@@ -306,7 +319,7 @@
                 <div class="secondeline"> 
                 <div class="notre">
                 <div class="imagebox">
-                <a href="" class="target"><img
+                <a href="" target="_self" class="target"><img
                   src="img/img-Notredamedelagarde.jpg"
                   width="300"
                   height="140"
@@ -319,7 +332,7 @@
                 <br />
                 <div class="parc">
                 <div class="imagebox">
-                <a href="" class="target"><img
+                <a href="" target="_self" class="target"><img
                   src="img/img-ParcLongchamp.jpg"
                   width="302"
                   height="152"
@@ -332,8 +345,8 @@
       </section>
     </div>
     <br />
-    <footer>
-      <div class="container">
+      <footer> <!--need to adjust the width of background footer-->
+        <div class="container">
         <div class="column1of3">
           <h3>A propos</h3>
           <p>Fonctionnement du site</p>
@@ -343,7 +356,7 @@
         </div>
         <div class="column2of3">
           <h3>Nos hébergements</h3>
-          <p>Charte qualite</p>
+          <p>Charte qualité</p>
           <p>Soumettre votre hôtel</p>
           <br />
         </div>
@@ -353,7 +366,7 @@
           <p>Centre d'aide</p>
           <br />
         </div>
-      </div>
-    </footer>
+        </div>
+      </footer>
   </body>
 </html>
